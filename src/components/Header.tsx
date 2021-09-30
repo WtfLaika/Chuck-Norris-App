@@ -3,24 +3,20 @@ import React from "react";
 import { useEffect } from "react";
 import { Provider } from "react-redux";
 import { UserActionTypes } from "../redux/type";
+import JokesService from "../services/Jokes.service";
 import { useAppSelector } from "./../app/hooks";
 import { store } from "./../index";
+
+const { REACT_APP_JOKES_URL, REACT_APP_RANDOM } = process.env;
 
 export const Header: React.FC = () => {
   const logo = useAppSelector((state): string => state.answer.logo);
   useEffect(() => {
-    try {
-      const response = axios
-        .get("https://api.chucknorris.io/jokes/random")
-        .then(async (response) => {
-          store.dispatch({
-            type: UserActionTypes.SET_LOGO,
-            payload: response.data.icon_url,
-          });
-        });
-    } catch (e) {
-      console.log(e);
-    }
+    JokesService.requestDispatchtJoke(
+      `${REACT_APP_JOKES_URL}${REACT_APP_RANDOM}`,
+      UserActionTypes.SET_LOGO,
+      "icon_url"
+    );
   }, []);
   return (
     <header>

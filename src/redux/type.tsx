@@ -8,7 +8,6 @@ export enum UserActionTypes {
   SET_PHRASE = "SET_PHRASE",
   SET_LOGO = "SET_LOGO",
   SET_CATEGORIES = "SET_CATEGORIES",
-  SET_IS_SELECTED = "SET_IS_SELECTED",
 }
 
 export interface SetPhrase {

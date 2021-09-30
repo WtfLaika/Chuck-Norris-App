@@ -7,8 +7,9 @@ import React, {
 } from "react";
 import { useAppSelector } from "../app/hooks";
 import { UserActionTypes } from "../redux/type";
-import { store } from "./../index";
+import JokesService from "../services/Jokes.service";
 import { Category } from "./Category";
+const { REACT_APP_JOKES_URL, REACT_APP_CATEGORIES } = process.env;
 
 export const Categories: React.FC = () => {
   const categories: string[] = useAppSelector(
@@ -16,14 +17,11 @@ export const Categories: React.FC = () => {
   );
 
   useEffect(() => {
-    const res = axios
-      .get("https://api.chucknorris.io/jokes/categories")
-      .then((res) => {
-        store.dispatch({
-          type: UserActionTypes.SET_CATEGORIES,
-          payload: res.data,
-        });
-      });
+    JokesService.requestDispatchtJoke(
+      `${REACT_APP_JOKES_URL}${REACT_APP_CATEGORIES}`,
+      UserActionTypes.SET_CATEGORIES,
+      ""
+    );
   }, []);
   return (
     <div className="categories">
@@ -31,9 +29,7 @@ export const Categories: React.FC = () => {
       <div className="categories-container">
         {categories.length > 0 &&
           categories.map((category, index) => {
-            return (
-              <Category key={category} category={category}  />
-            );
+            return <Category key={category} category={category} />;
           })}
       </div>
     </div>
