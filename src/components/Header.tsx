@@ -18,9 +18,7 @@ export const Header: React.FC = () => {
   return (
     <header>
       <div className="header-container">
-        {logo.length > 0 && (
-          <img src={logo} alt="chuck" className="chuck-logo" />
-        )}
+          <img src="https://assets.chucknorris.host/img/avatar/chuck-norris.png" alt="chuck" className="chuck-logo" />
         <div>Chuck Norris</div>
       </div>
     </header>
