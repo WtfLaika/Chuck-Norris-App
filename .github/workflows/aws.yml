@@ -57,6 +57,14 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
 
+    - name: create .env\
+      uses: SpicyPizza/create-envfile@v1
+      with:
+        envkey_REACT_APP_JOKES_URL: ${{ secrets.REACT_APP_JOKES_URL }}
+        envkey_REACT_APP_RANDOM: ${{ secrets.REACT_APP_RANDOM }}
+        envkey_REACT_APP_CATEGORY: ${{ secrets.REACT_APP_CATEGORY }}
+        envkey_REACT_APP_CATEGORIES: ${{ secrets.REACT_APP_CATEGORIES }}
+        file_name: .env
     - name: Login to Amazon ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1

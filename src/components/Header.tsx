@@ -8,6 +8,7 @@ const { REACT_APP_JOKES_URL, REACT_APP_RANDOM } = process.env;
 
 export const Header: React.FC = () => {
   const logo = useAppSelector((state): string => state.answer.logo);
+  console.log(logo)
   useEffect(() => {
     JokesService.requestDispatchtJoke(
       `${REACT_APP_JOKES_URL}${REACT_APP_RANDOM}`,
