@@ -14,7 +14,7 @@ class JokesService {
     resKey: string
   ): void {
     try {
-      const response = axios(url).then((response: any) => {
+      axios(url).then((response: any) => {
         let myRes = response.data[resKey];
         if (resKey === "") myRes = response.data;
         return store.dispatch({
