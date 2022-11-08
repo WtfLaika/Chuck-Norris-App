@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render App component should render App  without props  1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -12,38 +12,184 @@ Object {
           <div
             class="header-container"
           >
+            <img
+              alt="chuck"
+              class="chuck-logo"
+              src=""
+            />
             <div>
               Chuck Norris
             </div>
+            <a
+              class="btn-header btn-header-slct"
+              data-testid="main-link"
+              href="/"
+            >
+              Jokes
+            </a>
+            <a
+              class="btn-header false"
+              data-testid="memes-link"
+              href="/memes"
+            >
+              Memes
+            </a>
           </div>
         </header>
         <div
-          class="categories"
+          data-testid="main-page"
         >
           <div
-            class="title"
+            class="categories"
           >
-            Categories
+            <div
+              class="title"
+            >
+              Jokes
+               Categories
+            </div>
+            <div
+              class="categories-container"
+            />
           </div>
           <div
-            class="categories-container"
-          />
+            class="phrase-container"
+          >
+            <img
+              alt="Chuck"
+              id="chuck_img"
+              src=""
+            />
+            <div
+              class="phrase"
+            >
+              Choose a catagory to get Chuck's phrase
+            </div>
+          </div>
         </div>
-        <div
-          class="phrase-container"
+        <svg
+          aria-busy="true"
+          aria-label="blocks-loading"
+          class="loaderContainer"
+          data-testid="color-ring-svg"
+          height="80"
+          preserveAspectRatio="xMidYMid"
+          role="status"
+          viewBox="0 0 100 100"
+          width="80"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
         >
-          <img
-            alt="Chuck"
-            id="chuck_img"
-            src="chuckImg.png"
-          />
-          <div
-            class="phrase"
+          <defs>
+            <mask
+              id="ldio-4offds5dlws-mask"
+            >
+              <circle
+                cx="50"
+                cy="50"
+                r="26"
+                stroke="#fff"
+                stroke-dasharray="122.52211349000194 40.840704496667314"
+                stroke-linecap="round"
+                stroke-width="9"
+                transform="rotate(198.018 50 50)"
+              >
+                <animatetransform
+                  attributeName="transform"
+                  dur="1s"
+                  keyTimes="0;1"
+                  repeatCount="indefinite"
+                  type="rotate"
+                  values="0 50 50;360 50 50"
+                />
+              </circle>
+            </mask>
+          </defs>
+          <g
+            mask="url(#ldio-4offds5dlws-mask)"
           >
-            Choose a catagory to get Chuck's phrase
-            
-          </div>
-        </div>
+            <rect
+              fill="#e15b64"
+              height="100"
+              width="15"
+              x="14.5"
+              y="0"
+            >
+              <animate
+                attributeName="fill"
+                begin="-0.8s"
+                dur="1s"
+                keyTimes="0;0.25;0.5;0.75;1"
+                repeatCount="indefinite"
+                values="#e15b64;#f47e60;#f8b26a;#abbd81;#849b87"
+              />
+            </rect>
+            <rect
+              fill="#f47e60"
+              height="100"
+              width="15"
+              x="28.5"
+              y="0"
+            >
+              <animate
+                attributeName="fill"
+                begin="-0.6s"
+                dur="1s"
+                keyTimes="0;0.25;0.5;0.75;1"
+                repeatCount="indefinite"
+                values="#e15b64;#f47e60;#f8b26a;#abbd81;#849b87"
+              />
+            </rect>
+            <rect
+              fill="#f8b26a"
+              height="100"
+              width="15"
+              x="42.5"
+              y="0"
+            >
+              <animate
+                attributeName="fill"
+                begin="-0.4s"
+                dur="1s"
+                keyTimes="0;0.25;0.5;0.75;1"
+                repeatCount="indefinite"
+                values="#e15b64;#f47e60;#f8b26a;#abbd81;#849b87"
+              />
+            </rect>
+            <rect
+              fill="#abbd81"
+              height="100"
+              width="15"
+              x="56.5"
+              y="0"
+            >
+              <animate
+                attributeName="fill"
+                begin="-0.2s"
+                dur="1s"
+                keyTimes="0;0.25;0.5;0.75;1"
+                repeatCount="indefinite"
+                values="#e15b64;#f47e60;#f8b26a;#abbd81;#849b87"
+              />
+            </rect>
+            <rect
+              fill="#849b87"
+              height="100"
+              width="15"
+              x="70.5"
+              y="0"
+            >
+              <animate
+                attributeName="fill"
+                begin="0s"
+                dur="1s"
+                keyTimes="0;0.25;0.5;0.75;1"
+                repeatCount="indefinite"
+                values="#e15b64;#f47e60;#f8b26a;#abbd81;#849b87"
+              />
+            </rect>
+          </g>
+        </svg>
       </div>
     </div>
   </body>,
@@ -55,38 +201,184 @@ Object {
         <div
           class="header-container"
         >
+          <img
+            alt="chuck"
+            class="chuck-logo"
+            src=""
+          />
           <div>
             Chuck Norris
           </div>
+          <a
+            class="btn-header btn-header-slct"
+            data-testid="main-link"
+            href="/"
+          >
+            Jokes
+          </a>
+          <a
+            class="btn-header false"
+            data-testid="memes-link"
+            href="/memes"
+          >
+            Memes
+          </a>
         </div>
       </header>
       <div
-        class="categories"
+        data-testid="main-page"
       >
         <div
-          class="title"
+          class="categories"
         >
-          Categories
+          <div
+            class="title"
+          >
+            Jokes
+             Categories
+          </div>
+          <div
+            class="categories-container"
+          />
         </div>
         <div
-          class="categories-container"
-        />
+          class="phrase-container"
+        >
+          <img
+            alt="Chuck"
+            id="chuck_img"
+            src=""
+          />
+          <div
+            class="phrase"
+          >
+            Choose a catagory to get Chuck's phrase
+          </div>
+        </div>
       </div>
-      <div
-        class="phrase-container"
+      <svg
+        aria-busy="true"
+        aria-label="blocks-loading"
+        class="loaderContainer"
+        data-testid="color-ring-svg"
+        height="80"
+        preserveAspectRatio="xMidYMid"
+        role="status"
+        viewBox="0 0 100 100"
+        width="80"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
       >
-        <img
-          alt="Chuck"
-          id="chuck_img"
-          src="chuckImg.png"
-        />
-        <div
-          class="phrase"
+        <defs>
+          <mask
+            id="ldio-4offds5dlws-mask"
+          >
+            <circle
+              cx="50"
+              cy="50"
+              r="26"
+              stroke="#fff"
+              stroke-dasharray="122.52211349000194 40.840704496667314"
+              stroke-linecap="round"
+              stroke-width="9"
+              transform="rotate(198.018 50 50)"
+            >
+              <animatetransform
+                attributeName="transform"
+                dur="1s"
+                keyTimes="0;1"
+                repeatCount="indefinite"
+                type="rotate"
+                values="0 50 50;360 50 50"
+              />
+            </circle>
+          </mask>
+        </defs>
+        <g
+          mask="url(#ldio-4offds5dlws-mask)"
         >
-          Choose a catagory to get Chuck's phrase
-          
-        </div>
-      </div>
+          <rect
+            fill="#e15b64"
+            height="100"
+            width="15"
+            x="14.5"
+            y="0"
+          >
+            <animate
+              attributeName="fill"
+              begin="-0.8s"
+              dur="1s"
+              keyTimes="0;0.25;0.5;0.75;1"
+              repeatCount="indefinite"
+              values="#e15b64;#f47e60;#f8b26a;#abbd81;#849b87"
+            />
+          </rect>
+          <rect
+            fill="#f47e60"
+            height="100"
+            width="15"
+            x="28.5"
+            y="0"
+          >
+            <animate
+              attributeName="fill"
+              begin="-0.6s"
+              dur="1s"
+              keyTimes="0;0.25;0.5;0.75;1"
+              repeatCount="indefinite"
+              values="#e15b64;#f47e60;#f8b26a;#abbd81;#849b87"
+            />
+          </rect>
+          <rect
+            fill="#f8b26a"
+            height="100"
+            width="15"
+            x="42.5"
+            y="0"
+          >
+            <animate
+              attributeName="fill"
+              begin="-0.4s"
+              dur="1s"
+              keyTimes="0;0.25;0.5;0.75;1"
+              repeatCount="indefinite"
+              values="#e15b64;#f47e60;#f8b26a;#abbd81;#849b87"
+            />
+          </rect>
+          <rect
+            fill="#abbd81"
+            height="100"
+            width="15"
+            x="56.5"
+            y="0"
+          >
+            <animate
+              attributeName="fill"
+              begin="-0.2s"
+              dur="1s"
+              keyTimes="0;0.25;0.5;0.75;1"
+              repeatCount="indefinite"
+              values="#e15b64;#f47e60;#f8b26a;#abbd81;#849b87"
+            />
+          </rect>
+          <rect
+            fill="#849b87"
+            height="100"
+            width="15"
+            x="70.5"
+            y="0"
+          >
+            <animate
+              attributeName="fill"
+              begin="0s"
+              dur="1s"
+              keyTimes="0;0.25;0.5;0.75;1"
+              repeatCount="indefinite"
+              values="#e15b64;#f47e60;#f8b26a;#abbd81;#849b87"
+            />
+          </rect>
+        </g>
+      </svg>
     </div>
   </div>,
   "debug": [Function],
@@ -143,8 +435,8 @@ Object {
 }
 `;
 
-exports[`should render Categories component should render Categories without props  1`] = `
-Object {
+exports[`should render Categories component should render Categories with jokes  1`] = `
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -154,11 +446,18 @@ Object {
         <div
           class="title"
         >
-          Categories
+          Jokes
+           Categories
         </div>
         <div
           class="categories-container"
-        />
+        >
+          <button
+            class="btn-light"
+          >
+            animal,career,celebrity
+          </button>
+        </div>
       </div>
     </div>
   </body>,
@@ -169,11 +468,18 @@ Object {
       <div
         class="title"
       >
-        Categories
+        Jokes
+         Categories
       </div>
       <div
         class="categories-container"
-      />
+      >
+        <button
+          class="btn-light"
+        >
+          animal,career,celebrity
+        </button>
+      </div>
     </div>
   </div>,
   "debug": [Function],
@@ -230,8 +536,8 @@ Object {
 }
 `;
 
-exports[`should render Categories component should render Categories without props  2`] = `
-Object {
+exports[`should render Categories component should render Categories with memes 1`] = `
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -241,11 +547,18 @@ Object {
         <div
           class="title"
         >
-          Categories
+          Memes
+           Categories
         </div>
         <div
           class="categories-container"
-        />
+        >
+          <button
+            class="btn-light"
+          >
+            memes,dankmemes,random
+          </button>
+        </div>
       </div>
     </div>
   </body>,
@@ -256,11 +569,18 @@ Object {
       <div
         class="title"
       >
-        Categories
+        Memes
+         Categories
       </div>
       <div
         class="categories-container"
-      />
+      >
+        <button
+          class="btn-light"
+        >
+          memes,dankmemes,random
+        </button>
+      </div>
     </div>
   </div>,
   "debug": [Function],
@@ -317,15 +637,15 @@ Object {
 }
 `;
 
-exports[`should render Categories component should render Category component should render Category with props  1`] = `
-Object {
+exports[`should render Category component should render Category with joke  1`] = `
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <button
         class="btn-light"
       >
-        city
+        animal
       </button>
     </div>
   </body>,
@@ -333,7 +653,7 @@ Object {
     <button
       class="btn-light"
     >
-      city
+      animal
     </button>
   </div>,
   "debug": [Function],
@@ -390,20 +710,24 @@ Object {
 }
 `;
 
-exports[`should render Categories component should render Category component should render Category without props  1`] = `
-Object {
+exports[`should render Category component should render Category with joke  2`] = `
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <button
         class="btn-light"
-      />
+      >
+        memes
+      </button>
     </div>
   </body>,
   "container": <div>
     <button
       class="btn-light"
-    />
+    >
+      memes
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -459,37 +783,41 @@ Object {
 }
 `;
 
-exports[`should render Header component should contain header 1`] = `
-Object {
+exports[`should render Footer component should render Footer with joke    1`] = `
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="categories"
+        class="phrase-container"
       >
-        <div
-          class="title"
-        >
-          Categories
-        </div>
-        <div
-          class="categories-container"
+        <img
+          alt="Chuck"
+          id="chuck_img"
+          src=""
         />
+        <div
+          class="phrase"
+        >
+          ahhahah something so funny
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="categories"
+      class="phrase-container"
     >
-      <div
-        class="title"
-      >
-        Categories
-      </div>
-      <div
-        class="categories-container"
+      <img
+        alt="Chuck"
+        id="chuck_img"
+        src=""
       />
+      <div
+        class="phrase"
+      >
+        ahhahah something so funny
+      </div>
     </div>
   </div>,
   "debug": [Function],
@@ -546,119 +874,229 @@ Object {
 }
 `;
 
-exports[`should render Header component should render Header without props 1`] = `
-Object {
+exports[`should render Footer component should render Footer with meme 1`] = `
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <div
+        class="phrase-container"
+      >
+        <img
+          alt="Chuck"
+          id="chuck_img"
+          src=""
+        />
+        <div
+          class="phrase"
+        >
+          <img
+            class="meme"
+            src="https://static01.nyt.com/images/2021/04/30/multimedia/30xp-meme/29xp-meme-mediumSquareAt3X-v5.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="phrase-container"
+    >
+      <img
+        alt="Chuck"
+        id="chuck_img"
+        src=""
+      />
+      <div
+        class="phrase"
+      >
+        <img
+          class="meme"
+          src="https://static01.nyt.com/images/2021/04/30/multimedia/30xp-meme/29xp-meme-mediumSquareAt3X-v5.jpg"
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`should render Header component 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        data-testid="main-page"
+      >
+        <div
+          class="categories"
+        >
+          <div
+            class="title"
+          >
+            Jokes
+             Categories
+          </div>
+          <div
+            class="categories-container"
+          />
+        </div>
+        <div
+          class="phrase-container"
+        >
+          <img
+            alt="Chuck"
+            id="chuck_img"
+            src=""
+          />
+          <div
+            class="phrase"
+          >
+            Choose a catagory to get Chuck's phrase
+          </div>
+        </div>
+      </div>
       <header>
         <div
           class="header-container"
         >
+          <img
+            alt="chuck"
+            class="chuck-logo"
+            src=""
+          />
           <div>
             Chuck Norris
           </div>
+          <a
+            class="btn-header btn-header-slct"
+            data-testid="main-link"
+            href="/"
+          >
+            Jokes
+          </a>
+          <a
+            class="btn-header false"
+            data-testid="memes-link"
+            href="/memes"
+          >
+            Memes
+          </a>
         </div>
       </header>
     </div>
   </body>,
   "container": <div>
-    <header>
-      <div
-        class="header-container"
-      >
-        <div>
-          Chuck Norris
-        </div>
-      </div>
-    </header>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`should render PhraseField component should render PhraseField  without props  1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
+    <div
+      data-testid="main-page"
+    >
       <div
         class="categories"
       >
         <div
           class="title"
         >
-          Categories
+          Jokes
+           Categories
         </div>
         <div
           class="categories-container"
         />
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="categories"
-    >
       <div
-        class="title"
+        class="phrase-container"
       >
-        Categories
+        <img
+          alt="Chuck"
+          id="chuck_img"
+          src=""
+        />
+        <div
+          class="phrase"
+        >
+          Choose a catagory to get Chuck's phrase
+        </div>
       </div>
-      <div
-        class="categories-container"
-      />
     </div>
+    <header>
+      <div
+        class="header-container"
+      >
+        <img
+          alt="chuck"
+          class="chuck-logo"
+          src=""
+        />
+        <div>
+          Chuck Norris
+        </div>
+        <a
+          class="btn-header btn-header-slct"
+          data-testid="main-link"
+          href="/"
+        >
+          Jokes
+        </a>
+        <a
+          class="btn-header false"
+          data-testid="memes-link"
+          href="/memes"
+        >
+          Memes
+        </a>
+      </div>
+    </header>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
