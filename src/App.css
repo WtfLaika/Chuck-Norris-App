@@ -1,6 +1,6 @@
 html {
   font-size: 16px !important;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -8,7 +8,6 @@ body {
 }
 header {
   background-color: #422ed4;
-  padding: 8px 0;
 }
 
 .header-container {
@@ -19,8 +18,30 @@ header {
   align-items: center;
   color: white;
   font-weight: 800;
+  align-self: center;
+  height: 100%;
 }
-
+.btn-header {
+  margin-left: 2%;
+  background-color: #422ed4;
+  border-width: 0;
+  color: white;
+  font-size: 16px !important;
+  font-family: 'wild-family';
+  padding: 16px 10px;
+  text-decoration: none;
+}
+.btn-header:hover {
+  background-color: #6655d4;
+}
+.btn-header:first-of-type {
+  margin-left: 10%;
+}
+.btn-header.btn-header-slct {
+  margin-top: 4px;
+  border-bottom: 4px solid #150b51;
+  height: 100%;
+}
 .chuck-logo {
   margin-right: 10px;
   height: 43px;
@@ -32,7 +53,7 @@ header {
 }
 
 .title {
-  margin: 60px auto;
+  margin: 30px 0;
   font-size: 3.125rem;
   font-weight: 800;
   text-align: center;
@@ -41,8 +62,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 211px;
   align-content: space-between;
+  z-index: 1;
 }
 .btn-light {
   height: 57px;
@@ -56,6 +77,7 @@ header {
   font-size: 1rem !important;
   border: white;
   box-shadow: 0 0 7px 0px rgb(215 206 206);
+  margin-bottom: 15px;
 }
 
 .btn-light:hover {
@@ -65,8 +87,9 @@ header {
 
 .phrase-container {
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: -30px;
   width: 78%;
+  max-width: 600px;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -81,8 +104,8 @@ header {
 
 .phrase {
   padding: 24px;
+  min-height: 100px;
   color: white;
-  height: 114px;
   background-color: #422ed4;
   font-weight: 600;
   font-size: 1.25rem;
@@ -91,5 +114,16 @@ header {
   width: 100%;
   border-radius: 25px;
   position: relative;
+  height: max-content;
   top: -85px;
+}
+.meme {
+  width: 100%;
+  max-height: 400px;
+}
+.loaderContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
 }

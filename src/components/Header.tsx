@@ -1,26 +1,24 @@
-import React from "react";
-import { useEffect } from "react";
-import { UserActionTypes } from "../redux/type";
-import JokesService from "../services/Jokes.service";
-import { useAppSelector } from "./../app/hooks";
+import React from 'react';
+import ChuckIcon from '../assets/chuck-norris.png';
+import {Link, useLocation} from 'react-router-dom';
 
-const { REACT_APP_GET_ICON_URL } = process.env;
+export const Header = () => {
+  const {pathname} = useLocation();
 
-export const Header: React.FC = () => {
-  const logo = useAppSelector((state): string => state.answer.logo);
-  console.log("url",REACT_APP_GET_ICON_URL)
-  useEffect(() => {
-    JokesService.requestDispatchtJoke(
-      `${REACT_APP_GET_ICON_URL}`,
-      UserActionTypes.SET_LOGO,
-      "url"
-    );
-  }, []);
   return (
     <header>
       <div className="header-container">
-          <img src={logo} alt="chuck" className="chuck-logo" />
+        <img src={ChuckIcon} alt="chuck" className="chuck-logo" />
         <div>Chuck Norris</div>
+        <Link className={`btn-header ${pathname === '/' && 'btn-header-slct'}`} to="/" data-testid="main-link">
+          Jokes
+        </Link>
+        <Link
+          className={`btn-header ${pathname === '/memes' && 'btn-header-slct'}`}
+          to="/memes"
+          data-testid="memes-link">
+          Memes
+        </Link>
       </div>
     </header>
   );

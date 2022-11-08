@@ -1,9 +1,5 @@
 {
   "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-flow"],
-  "plugins": [
-    "@babel/plugin-transform-runtime",
-    "@babel/plugin-syntax-jsx",
-    "@babel/plugin-transform-react-jsx"
-   
-  ]
+  "plugins": ["@babel/plugin-transform-runtime", "@babel/plugin-syntax-jsx", "@babel/plugin-transform-react-jsx"],
+  "transformIgnorePatterns": ["node_modules/(?!variables/.*)"]
 }
